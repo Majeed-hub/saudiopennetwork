@@ -56,7 +56,7 @@ const whitepaper = process.env.PUBLIC_URL + "/documents/whitePaper.pdf";
         <img
           src={saudiopennetwork_logo}
           alt="Saudi Open Network Logo"
-          className="h-[300px] w-[380px] mb-4"
+          className="h-[350px] w-[380px] mb-4"
         />
         {/* <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-800 to-gray-900 bg-clip-text text-center text-4xl font-semibold leading-none dark:from-gray-200 dark:to-gray-300">
         </span> */}
@@ -71,7 +71,7 @@ const whitepaper = process.env.PUBLIC_URL + "/documents/whitePaper.pdf";
             target="_blank"
             rel="noopener noreferrer"
           >
-            <PulsatingButton className="mx-auto" pulseColor="green">
+            <PulsatingButton className="mx-auto" >
               Download White Paper
             </PulsatingButton>
           </a>

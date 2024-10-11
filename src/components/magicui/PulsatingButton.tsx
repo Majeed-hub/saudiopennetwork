@@ -11,21 +11,21 @@ interface PulsatingButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElem
 export function PulsatingButton({
   className,
   children,
-  pulseColor = "#0096ff",
+  pulseColor = "#e7e7e7",
   duration = "1.5s",
   ...props
 }: PulsatingButtonProps) {
   return (
     <button
       className={cn(
-        "relative text-center cursor-pointer flex justify-center items-center rounded-lg text-white dark:text-black bg-blue-500 dark:bg-blue-500 px-4 py-2",
+        "relative text-center cursor-pointer flex justify-center items-center rounded-lg text-green-500 dark:text-green-500 bg-white dark:bg-white-800 px-4 py-2",
         className,
       )}
       style={
         {
           "--pulse-color": pulseColor,
           "--duration": duration,
-        } as React.CSSProperties
+        } as React.CSSProperties   
       }
       {...props}
     >

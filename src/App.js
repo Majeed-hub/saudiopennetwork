@@ -36,7 +36,10 @@ import { cn } from "./lib/utils";
 import saudiopennetwork_logo from "./assets/saudiopennetwork_logo.png";
 import {PulsatingButton} from "./components/magicui/PulsatingButton";
 
+
 export default function App() {
+const whitepaper = process.env.PUBLIC_URL + "/documents/whitePaper.pdf";
+
   return (
     <div className="relative flex h-screen items-center justify-center overflow-hidden">
       <AnimatedGridPattern
@@ -58,10 +61,20 @@ export default function App() {
         {/* <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-800 to-gray-900 bg-clip-text text-center text-4xl font-semibold leading-none dark:from-gray-200 dark:to-gray-300">
         </span> */}
         <div className="flex justify-center mt-10">
-          <PulsatingButton className="mx-auto" color="green">
+          {/* <PulsatingButton className="mx-auto" color="green">
             {" "}
             Download White Paper
-          </PulsatingButton>
+          </PulsatingButton> */}
+          <a
+            href={whitepaper}
+            download={whitepaper}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <PulsatingButton className="mx-auto" pulseColor="green">
+              Download White Paper
+            </PulsatingButton>
+          </a>
         </div>
 
         <BorderBeam size={500} duration={12} delay={9} />

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",  // This should be correct for React 17+
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/lib/*": ["lib/*"],
+      "@/components/*": ["components/*"]
+    },
+    "strict": true, // Enables all strict type-checking options
+    "skipLibCheck": true // Skips type checking of declaration files
+  },
+  "include": ["src/**/*"]
+}

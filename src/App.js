@@ -49,17 +49,19 @@ export default function App() {
           "absolute inset-0 h-full w-full"
         )}
       />
-      <div className="relative flex h-[500px] w-[750px] flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl z-10">
+      <div className="relative flex h-[500px] w-[750px] flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl z-10 mx-4 md:mx-0">
         <img
           src={saudiopennetwork_logo}
           alt="Saudi Open Network Logo"
           className="h-[300px] w-[380px] mb-4"
         />
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-800 to-gray-900 bg-clip-text text-center text-4xl font-semibold leading-none dark:from-gray-200 dark:to-gray-300">
-          Coming Soon...
-        </span>
+        {/* <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-800 to-gray-900 bg-clip-text text-center text-4xl font-semibold leading-none dark:from-gray-200 dark:to-gray-300">
+        </span> */}
         <div className="flex justify-center mt-10">
-          <PulsatingButton className="mx-auto" color="green"> Download White Paper</PulsatingButton>
+          <PulsatingButton className="mx-auto" color="green">
+            {" "}
+            Download White Paper
+          </PulsatingButton>
         </div>
 
         <BorderBeam size={500} duration={12} delay={9} />
